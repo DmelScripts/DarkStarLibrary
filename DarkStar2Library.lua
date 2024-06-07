@@ -580,7 +580,21 @@ G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["34"]["Text"] = [[Locked]];
 G2L["34"]["Name"] = [[Hover]];
 G2L["34"]["Position"] = UDim2.new(0.02902, 0, 0.12044, 0);
-
+-- StarterGui.DARKSTARLIBS2.Re.Slider.Num
+G2L["101"] = Instance.new("TextLabel", G2L["31"]);
+G2L["101"]["ZIndex"] = 12;
+G2L["101"]["BorderSizePixel"] = 0;
+G2L["101"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["101"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["TextSize"] = 14;
+G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+G2L["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["BackgroundTransparency"] = 1;
+G2L["101"]["Size"] = UDim2.new(0.15, 0, 0.26249, 0);
+G2L["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["Text"] = [[0]];
+G2L["101"]["Name"] = [[Num]];
+G2L["101"]["Position"] = UDim2.new(0.825, 0, 0.12044, 0);
 -- StarterGui.DARKSTARLIBS2.Re.Slider.Hover.Element
 G2L["35"] = Instance.new("Frame", G2L["34"]);
 G2L["35"]["BorderSizePixel"] = 0;
@@ -604,39 +618,6 @@ G2L["36"]["Position"] = UDim2.new(0.5, 0, 0.70769, 0);
 G2L["36"]:SetAttribute([[state]], 0);
 G2L["36"]:SetAttribute([[parts]], 0);
 
--- StarterGui.DARKSTARLIBS2.Re.Slider.Element.DotTrack
-G2L["37"] = Instance.new("Frame", G2L["36"]);
-G2L["37"]["ZIndex"] = 4;
-G2L["37"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["37"]["Size"] = UDim2.new(0.97043, 0, 1, 0);
-G2L["37"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["37"]["Name"] = [[DotTrack]];
-G2L["37"]["BackgroundTransparency"] = 1;
-
--- StarterGui.DARKSTARLIBS2.Re.Slider.Element.DotTrack.Dot
-G2L["38"] = Instance.new("ImageButton", G2L["37"]);
-G2L["38"]["ZIndex"] = 2;
-G2L["38"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["38"]["Image"] = [[rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png]];
-G2L["38"]["ImageRectSize"] = Vector2.new(42, 42);
-G2L["38"]["Size"] = UDim2.new(0.08, 0, 1.28798, 0);
-G2L["38"]["BackgroundTransparency"] = 1;
-G2L["38"]["Name"] = [[Dot]];
-G2L["38"]["ImageRectOffset"] = Vector2.new(0, 208);
-G2L["38"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-
--- StarterGui.DARKSTARLIBS2.Re.Slider.Element.DotTrack.HoverOverlay
-G2L["39"] = Instance.new("ImageLabel", G2L["37"]);
-G2L["39"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["39"]["Image"] = [[rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png]];
-G2L["39"]["ImageRectSize"] = Vector2.new(44, 44);
-G2L["39"]["BackgroundTransparency"] = 1;
-G2L["39"]["ImageRectOffset"] = Vector2.new(0, 118);
-G2L["39"]["Name"] = [[HoverOverlay]];
-G2L["39"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-
--- StarterGui.DARKSTARLIBS2.Re.Slider.Element.DotTrack.HoverOverlay.UIAspectRatioConstraint
-G2L["3a"] = Instance.new("UIAspectRatioConstraint", G2L["39"]);
 
 
 -- StarterGui.DARKSTARLIBS2.Re.Slider.Element.Gutter
@@ -662,14 +643,45 @@ G2L["3c"]["ImageColor3"] = Color3.fromRGB(0, 177, 112);
 G2L["3c"]["AnchorPoint"] = Vector2.new(0, 0.5);
 G2L["3c"]["Image"] = [[rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png]];
 G2L["3c"]["ImageRectSize"] = Vector2.new(17, 17);
-G2L["3c"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["3c"]["Size"] = UDim2.new(0, 0, 1, 0);
 G2L["3c"]["BackgroundTransparency"] = 1;
 G2L["3c"]["ImageRectOffset"] = Vector2.new(45, 118);
 G2L["3c"]["Name"] = [[FilledGutter]];
 G2L["3c"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+-- StarterGui.DARKSTARLIBS2.Folder.Slider.Element.DotTrack
+G2L["5b"] = Instance.new("Frame", G2L["3c"]);
+G2L["5b"]["ZIndex"] = 4;
+G2L["5b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["5b"]["Name"] = [[DotTrack]];
+G2L["5b"]["BackgroundTransparency"] = 1;
 
+-- StarterGui.DARKSTARLIBS2.Folder.Slider.Element.DotTrack.Dot
+G2L["5c"] = Instance.new("ImageButton", G2L["5b"]);
+G2L["5c"]["ZIndex"] = 2;
+G2L["5c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5c"]["Image"] = [[rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png]];
+G2L["5c"]["ImageRectSize"] = Vector2.new(42, 42);
+G2L["5c"]["Size"] = UDim2.new(0, 38, 0, 33);
+G2L["5c"]["BackgroundTransparency"] = 1;
+G2L["5c"]["Name"] = [[Dot]];
+G2L["5c"]["ImageRectOffset"] = Vector2.new(0, 208);
+G2L["5c"]["Position"] = UDim2.new(1, 0, 0.5, 0);
+
+-- StarterGui.DARKSTARLIBS2.Folder.Slider.Element.DotTrack.HoverOverlay
+G2L["5d"] = Instance.new("ImageLabel", G2L["5b"]);
+G2L["5d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5d"]["Image"] = [[rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png]];
+G2L["5d"]["ImageRectSize"] = Vector2.new(44, 44);
+G2L["5d"]["BackgroundTransparency"] = 1;
+G2L["5d"]["ImageRectOffset"] = Vector2.new(0, 118);
+G2L["5d"]["Name"] = [[HoverOverlay]];
+G2L["5d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.DARKSTARLIBS2.Folder.Slider.Element.DotTrack.HoverOverlay.UIAspectRatioConstraint
+G2L["5e"] = Instance.new("UIAspectRatioConstraint", G2L["5d"]);
 -- StarterGui.DARKSTARLIBS2.Re.Slider.Element.LocalScript
-G2L["3d"] = Instance.new("LocalScript", G2L["36"]);
 
 
 -- StarterGui.DARKSTARLIBS2.Re.DropdownButton
@@ -1111,7 +1123,7 @@ G2L["6a"]["BackgroundTransparency"] = 1;
 G2L["6a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["6a"]["Size"] = UDim2.new(1, 0, 0, 0);
 G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Text"] = [[New UI Libs!??]];
+G2L["6a"]["Text"] = [[New UI Libs!🔥]];
 G2L["6a"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["6a"]["Position"] = UDim2.new(0.5, 0, 1.42262, 0);
 
@@ -1429,56 +1441,56 @@ local tw1 = game:GetService("TweenService"):Create(newTabBtn.Hover, TweenInfo.ne
 
 
 
-			--function self.newSlider(name, max, manageSlider, func)
-			--	local newSlider = reserved.Slider:Clone()
+			function self.newSlider(Color,Name, max,textholder, manageSlider, func)
+				local newSlider = reserved.Slider:Clone()
 
-				
-			--	newSlider.Visible = true
-			--	newSlider.Name = name
-			--	newSlider.Parent = newTab
-			--	newSlider.Title.Text = name
+				newSlider.Visible = true
+				newSlider.Name = Name
+				newSlider.Parent = newTab.TabButtonMain.TabButton
+				newSlider.BackgroundColor3 = Color
+				newSlider.Hover.Text = Name
 			
 
-			--	local Mouse = game.Players.LocalPlayer:GetMouse()
-			--	local tweenServ = twServ
+				local Mouse = game.Players.LocalPlayer:GetMouse()
+				local tweenServ = twServ
 
-			--	local Trigger = newSlider.ActualSlider.Trigger
-			--	local Label = newSlider.ActualSlider.Title
-			--	local Fill = newSlider.ActualSlider.Fill
-			--	local Parent = newSlider.ActualSlider
+				local Trigger = newSlider.Element.Gutter.FilledGutter.DotTrack.Dot
+				local Label = newSlider.Num
+				local Fill = newSlider.Element.Gutter.FilledGutter
+				local Parent = newSlider.Element.Gutter
 
-			--	local perc
-			--	local Percent
-			--	local MouseDown = false
-			--	local delayTw = 0.3
+				local perc
+				local Percent
+				local MouseDown = false
+				local delayTw = 0.3
 
-			--	local function Update()
-			--		MouseDown = true
-			--		repeat
-			--			task.wait()
-			--			Percent = math.clamp((Mouse.X - Parent.AbsolutePosition.X) / Parent.AbsoluteSize.X, 0, 1)
-			--			perc = math.round(Percent * max)
-			--			if manageSlider == false then
-			--				Label.Text = perc
-			--				func(perc)
-			--			elseif manageSlider == true then
-			--				Label.Text = perc
-			--				func(perc, Label)
-			--			end
-			--			local tween = tweenServ:Create(Fill, TweenInfo.new(delayTw, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Size = UDim2.fromScale(Percent, 1) })
-			--			tween:Play()
-			--		until MouseDown == false
-			--	end
+				local function Update()
+					MouseDown = true
+					repeat
+						task.wait()
+						Percent = math.clamp((Mouse.X - Parent.AbsolutePosition.X) / Parent.AbsoluteSize.X, 0, 1)
+						perc = math.round(Percent * max)
+						if manageSlider == false then
+							Label.Text = textholder..perc
+							func(perc)
+						elseif manageSlider == true then
+							Label.Text = perc
+							func(perc, Label)
+						end
+						local tween = tweenServ:Create(Fill, TweenInfo.new(delayTw, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Size = UDim2.fromScale(Percent, 1) })
+						tween:Play()
+					until MouseDown == false
+				end
 
-			--	Trigger.MouseButton1Down:Connect(Update)
+				Trigger.MouseButton1Down:Connect(Update)
 
-			--	UIS.InputEnded:Connect(function(input)
-			--		if input.UserInputType ==  Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			--			MouseDown = false
-			--		end
-			--	end)
+				UIS.InputEnded:Connect(function(input)
+					if input.UserInputType ==  Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+						MouseDown = false
+					end
+				end)
 
-			--end 
+			end 
 		
 
 			function self.newToggle(color,title, toggle, func)
@@ -1525,56 +1537,55 @@ local tw1 = game:GetService("TweenService"):Create(newTabBtn.Hover, TweenInfo.ne
 			end
 		end)
 end
-	
-			function self.newDropdown(color ,name, listTable, func)
-				local newdd = reserved.DropDown:Clone()
-				newdd.Visible = true
-				newdd.Parent = newTab.TabButtonMain.TabButton
-newdd.BackgroundColor3 = _G.BCOLOR
-				newdd.Name = name
-				newdd.Hover.Text = name
+	--//⚠TESTING⚠\\--
+--			function self.newDropdown(color ,name, listTable, func)
+--				local newdd = reserved.DropDown:Clone()
+--				newdd.Visible = true
+--				newdd.Parent = newTab.TabButtonMain.TabButton
+--newdd.BackgroundColor3 = _G.BCOLOR
+--				newdd.Name = name
+--				newdd.Hover.Text = name
 				
 
-				for i, list in ipairs(listTable) do
-					local newddbtn = reserved.DropdownButton:Clone()
-					newddbtn.Visible = true
-					newddbtn.Parent = newdd.ScrollingFrame
-newddbtn.BackgroundColor3 = color
-					newddbtn.Name = list
-					newddbtn.name.Text = list
-					task.spawn(function()
-						newddbtn.MouseButton1Click:Connect(function()
-							newdd.Select.Text = list
-					local twPos = twServ:Create(newdd.Frame, TweenInfo.new(0.15), {Size = UDim2.new(0.9, 0,0.101, 0)})
-							twPos:Play()
-							twPos.Completed:Wait()
-							newdd.Frame.Visible = false
-							func(list)
-						end)
-					end)
-				end		
+--				for i, list in ipairs(listTable) do
+--					local newddbtn = reserved.DropdownButton:Clone()
+--					newddbtn.Visible = true
+--					newddbtn.Parent = newdd.ScrollingFrame
+--newddbtn.BackgroundColor3 = color
+--					newddbtn.Name = list
+--					newddbtn.name.Text = list
+--					task.spawn(function()
+--						newddbtn.MouseButton1Click:Connect(function()
+--							newdd.Select.Text = list
+--					local twPos = twServ:Create(newdd.Frame, TweenInfo.new(0.15), {Size = UDim2.new(0.9, 0,0.101, 0)})
+--							twPos:Play()
+--							twPos.Completed:Wait()
+--							newdd.Frame.Visible = false
+--							func(list)
+--						end)
+--					end)
+--				end		
 
-				newdd.Dropdown.MouseButton1Click:Connect(function()
+--				newdd.Dropdown.MouseButton1Click:Connect(function()
 
 
-					if newdd.ScrollingFrame.Visible == false then
+--					if newdd.ScrollingFrame.Visible == false then
 						
-						newdd.ScrollingFrame.Visible = true
-				local twPos = twServ:Create(newdd, TweenInfo.new(0.15), {Size = UDim2.new(0.572, 0,0.308, 0, 0)})
-						twPos:Play()
-					elseif newdd.ScrollingFrame.Visible == true then
+--						newdd.ScrollingFrame.Visible = true
+--				local twPos = twServ:Create(newdd, TweenInfo.new(0.15), {Size = UDim2.new(0.572, 0,0.308, 0, 0)})
+--						twPos:Play()
+--					elseif newdd.ScrollingFrame.Visible == true then
 					
-				local twPos = twServ:Create(newdd, TweenInfo.new(0.15), {Size = UDim2.new(0.572, 0,0.101, 0, 0)})
-						twPos:Play()
-						twPos.Completed:Wait()
-						newdd.ScrollingFrame.Visible = false
-					end
-				end)
-			end
+--				local twPos = twServ:Create(newdd, TweenInfo.new(0.15), {Size = UDim2.new(0.572, 0,0.101, 0, 0)})
+--						twPos:Play()
+--						twPos.Completed:Wait()
+--						newdd.ScrollingFrame.Visible = false
+--					end
+--				end)
+--			end
 
 			return self
 		end
-
 
 
 
@@ -1586,3 +1597,5 @@ newddbtn.BackgroundColor3 = color
 end;
 };
 return require(G2L["73"]);
+
+
