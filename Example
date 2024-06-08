@@ -1,4 +1,4 @@
 local DarkStar2Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DmelScripts/DarkStarLibrary/main/DarkStar2Library.lua"))()
 local window = DarkStar2Library:Load()
-local tab1 = DarkStar2Library.newTab(Color3.fromRGB(255, 0, 0),"hi sir welcome to dark star")
-tab1.newLabel(Color3.fromRGB(0, 76, 255),"ho","ho")
+local tab1 = DarkStar2Library.newTab(Color3.fromRGB(255,255,255),13786322777,Color3.fromRGB(255, 0, 0),"hi sir welcome to dark star")
+tab1.newLabel(Color3.fromRGB(255,255, 255),Color3.fromRGB(0, 76, 255),"ho","ho")
