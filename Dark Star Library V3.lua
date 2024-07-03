@@ -1670,6 +1670,7 @@ function UILIB:Load(name, img, color)
 		parent.Windows.UIStroke.Color = color
 		parent.Windows.TabSide.ImageLabel.Image = "rbxassetid://"..img
 		parent.Windows.TabSide.ImageLabel.TextLabel.Text = name
+		--[			
 		game:GetService("TweenService"):Create(OA.List, TweenInfo.new(icontime, Enum.EasingStyle.Circular), {ImageTransparency = 0}):Play();
 		wait(icontime)
 		game:GetService("TweenService"):Create(OA.Bulb, TweenInfo.new(icontime, Enum.EasingStyle.Circular), {ImageTransparency = 0}):Play();
@@ -1701,7 +1702,7 @@ function UILIB:Load(name, img, color)
 		game:GetService("TweenService"):Create(OA:WaitForChild("Combine"), TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Position = UDim2.fromScale(0.5,-3)}):Play();
 		parent.Windows.Visible = true
 		game:GetService("TweenService"):Create(parent:WaitForChild("Windows").UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Scale = 1}):Play();
-
+]
 	end)
 
 	parent.CO.MouseButton1Click:Connect(function()
