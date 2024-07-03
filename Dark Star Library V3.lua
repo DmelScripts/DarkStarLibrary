@@ -1699,8 +1699,8 @@ function UILIB:Load(name, img, color)
 		game:GetService("TweenService"):Create(OA, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Position = UDim2.fromScale(0.5,0.75)}):Play();
 		wait(1)
 		game:GetService("TweenService"):Create(OA:WaitForChild("Combine"), TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Position = UDim2.fromScale(0.5,-3)}):Play();
-		OA.Parent.Windows.Visible = true
-		game:GetService("TweenService"):Create(OA.Parent:WaitForChild("Windows").UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Scale = 1}):Play();
+		parent.Windows.Visible = true
+		game:GetService("TweenService"):Create(parent:WaitForChild("Windows").UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Scale = 1}):Play();
 
 	end)
 
