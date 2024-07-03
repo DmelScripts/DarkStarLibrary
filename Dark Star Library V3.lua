@@ -1666,8 +1666,8 @@ function UILIB:Load(name, img, color)
 	
 	task.spawn(function()
 		local icontime = 1.5
-		parent.Re.TabSideButton.ActiveMain.GroupColor3 = Color3.fromRGB(color)
-		parent.Windows.UIStroke.Color = Color3.fromRGB(color)
+		parent.Re.TabSideButton.ActiveMain.GroupColor3 = color
+		parent.Windows.UIStroke.Color = color
 		parent.Windows.TabSide.ImageLabel.Image = "rbxassetid://"..img
 		parent.Windows.TabSide.ImageLabel.TextLabel.Text = name
 		game:GetService("TweenService"):Create(OA.List, TweenInfo.new(icontime, Enum.EasingStyle.Circular), {ImageTransparency = 0}):Play();
