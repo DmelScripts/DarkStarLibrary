@@ -1666,7 +1666,7 @@ function UILIB:Load(name, img, color)
 	
 	task.spawn(function()
 		local icontime = 1.5
-		parent.Re.TabSideButton.ActiveMain.GroupColor3 = color
+		--parent.Re.TabSideButton.ActiveMain.GroupColor3 = color
 		parent.Windows.UIStroke.Color = color
 		parent.Windows.TabSide.ImageLabel.Image = "rbxassetid://"..img
 		parent.Windows.TabSide.ImageLabel.TextLabel.Text = name
