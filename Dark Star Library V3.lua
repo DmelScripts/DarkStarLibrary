@@ -21,7 +21,7 @@ G2L["1"]["ResetOnSpawn"] = false;
 
 -- StarterGui.DarkStarLib3.Windows
 G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["Visible"] = false;
+G2L["2"]["Visible"] = true;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
 G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 1);
