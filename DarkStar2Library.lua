@@ -4,7 +4,7 @@ local DSL2 = {};
 
 -- StarterGui.DARKSTARLIBS2
 --DSL2["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
-DSL2["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerUI"));
+DSL2["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 DSL2["1"]["Enabled"] = true;
 DSL2["1"]["Name"] = [[DARKSTARLIBS2]];
 DSL2["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
