@@ -1701,6 +1701,7 @@ function UILIB:Load(name, img)
 		parent.Windows.Visible = true
 		game:GetService("TweenService"):Create(parent:WaitForChild("Windows").UIScale, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut), {Scale = 1}):Play();
 ]]
+				end
 	end)
 
 	parent.CO.MouseButton1Click:Connect(function()
@@ -1735,7 +1736,7 @@ tw.Completed:Wait()
 tw2:Play()
 			parent.CO.Text = "X"
 			tw12:Play()
-		end
+		
 		
 	end)
 
@@ -2046,7 +2047,7 @@ return UILIB
 
 	
 
-		end;
+		
 
 end;
 };
