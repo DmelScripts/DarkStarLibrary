@@ -38,7 +38,6 @@ G2L["3"]["CornerRadius"] = UDim.new(0, 25);
 -- StarterGui.DarkStarLib3.Windows.UIStroke
 G2L["4"] = Instance.new("UIStroke", G2L["2"]);
 G2L["4"]["Thickness"] = 2;
-G2L["4"]["Color"] = Color3.fromRGB(201, 0, 255);
 
 -- StarterGui.DarkStarLib3.Windows.UIStroke.UIGradient
 G2L["5"] = Instance.new("UIGradient", G2L["4"]);
@@ -118,7 +117,6 @@ G2L["e"] = Instance.new("ImageLabel", G2L["9"]);
 G2L["e"]["ZIndex"] = 12;
 G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["Image"] = [[rbxassetid://14755021654]];
 G2L["e"]["ImageRectSize"] = Vector2.new(132, 132);
 G2L["e"]["Size"] = UDim2.new(0.22222, 0, 0.13718, 0);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -141,7 +139,6 @@ G2L["f"]["BackgroundTransparency"] = 1;
 G2L["f"]["AnchorPoint"] = Vector2.new(0, 0.5);
 G2L["f"]["Size"] = UDim2.new(2.71053, 0, 1, 0);
 G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[Icon]];
 G2L["f"]["Position"] = UDim2.new(1.21053, 0, 0.5, 0);
 
 -- StarterGui.DarkStarLib3.Windows.TabSide.ImageLabel.TextLabel.UITextSizeConstraint
@@ -1657,7 +1654,7 @@ local closed = false
 
 
 
-function UILIB:Load(name, img, color)
+function UILIB:Load(name, img)
 	
 	
 
@@ -1665,9 +1662,9 @@ function UILIB:Load(name, img, color)
 	
 	
 	task.spawn(function()
-		local icontime = 1.5
+		--local icontime = 1.5
 		--parent.Re.TabSideButton.ActiveMain.GroupColor3 = color
-		parent.Windows.UIStroke.Color = color
+		--parent.Windows.UIStroke.Color = color
 		parent.Windows.TabSide.ImageLabel.Image = "rbxassetid://"..img
 		parent.Windows.TabSide.ImageLabel.TextLabel.Text = name
 				
